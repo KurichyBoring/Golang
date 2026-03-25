@@ -3,11 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	name := "hz"
-	var age int = 30
-	country := "Msk"
-	var salary float64 = 500000.00
-	isGo := true
+	var a, b int = 0, 0
+	fmt.Print("Введи 1 число: ")
+	fmt.Scanln(&a)
+	fmt.Print("Введи 2 число: ")
+	fmt.Scanln(&b)
 
-	fmt.Printf("Имя: %s, Возраст: %d, Город: %s, Зарплата: %.0f$, Go: %t\n", name, age, country, salary, isGo)
+	c := a - b
+	fmt.Printf("Разница: %d\n", c)
 }
